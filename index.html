@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" 
-    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==
     " crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style.css">
 
 </head>
+
 <body>
     <header class="header">
         <div class="search-bar">
             <!-- <i class="fa-solid fa-earth-americas icon"></i> -->
-        <img src="./images/saturn.png" width="60" height="60" color="white" alt="">
+            <img src="./images/saturn.png" width="60" height="60" color="white" alt="">
             <input type="text" class="search" placeholder="Search">
         </div>
         <nav>
-            <ul  type=none class="nav">
-                <li class="list_item">Home</li>
+            <ul type=none class="nav">
+                <li class="list_item" id="home">Home</li>
                 <li class="list_item">Contacts</li>
                 <li class="list_item">About</li>
                 <!-- <li class="list_item">Home</li>
@@ -28,9 +29,9 @@
             </ul>
             <span class="bottom-nav-line"></span>
         </nav>
-        
+
     </header>
-    <a class="button" href="#">
+    <a class="button" href="#" id="solar-btn">
         <span></span>
         <span></span>
         <span></span>
@@ -52,51 +53,77 @@
         Something Else
     </a>
 
-    <section class="solar-system">
+    <section class="solar-system" id="solar-system">
         <div class="planets">
             <article class="info">
                 <img src="./images/mercury.png" alt="">
                 <div>
                     <h1 class="title">MERCURY</h1>
-                    <p class="description">dfsjfsdjgfsdhfg</p>
+                    <p class="description">Mercury is the smallest planet in the Solar System and the closest to the Sun.
+                        Its orbit around the Sun takes 87.97 Earth days, the shortest of all the Sun's planets.
+                        It is named after the Roman god Mercurius (Mercury), god of commerce, messenger of the gods,
+                        and mediator between gods and mortals.</p>
+                    <button class="link-btn">More information</button>
                 </div>
             </article>
             <article class="info">
                 <img src="./images/venus.png" alt="">
                 <div>
                     <h1 class="title">VENUS</h1>
-                    <p class="description">dfsjfsdjgfsdhfg</p>
+                    <p class="description">Venus is the second largest terrestrial object of the Solar System. 
+                        It has a surface gravity slightly lower than on Earth and has a very weak induced magnetosphere. 
+                        The atmosphere of Venus, mainly consists of carbon dioxide, and is the densest and hottest of the
+                         four terrestrial planets at the surface. 
+                    </p>
+                    <button class="link-btn">More information</button>
                 </div>
             </article>
             <article class="info">
-                <img src="./images/earth.png" alt="">
+                <!-- <img src="./images/earth.png" alt=""> -->
+                <model-viewer id="aSide" src="./resources/Earth_1_12756.glb" alt="Earth 3D model" auto-rotate camera-controls ar ios-src="./resources/Earth_1_12756.glb"></model-viewer>
                 <div>
                     <h1 class="title">EARTH</h1>
-                    <p class="description">dfsjfsdjgfsdhfg</p>
+                     <button class="link-btn">More information</button>
                 </div>
             </article>
             <article class="info">
                 <img src="./images/mars.png" alt="">
                 <div>
                     <h1 class="title">MARS</h1>
-                    <p class="description">dfsjfsdjgfsdhfg</p>
+                    <p class="description">Mars is the fourth planet from the Sun and the second-smallest 
+                        planet in the Solar System, being larger than only Mercury. In the English language, 
+                        Mars is named for the Roman god of war. Mars is a terrestrial planet with a thin atmosphere (less than 1% that of Earth's).
+                        Some of the most notable surface features on Mars include Olympus Mons.
+                    </p>
+                    <button class="link-btn">More information</button>
                 </div>
             </article>
             <article class="info">
                 <img src="./images/jupiter.png" alt="">
                 <div>
                     <h1 class="title">JUPITER</h1>
-                    <p class="description">dfsjfsdjgfsdhfg</p>
+                    <p class="description">Jupiter is the fifth planet from the Sun and the 
+                        largest in the Solar System. It is a gas giant with a mass more than two and a half times that of all the other 
+                        planets in the Solar System combined, but slightly less than one-thousandth the mass of the Sun.
+                    </p>
+                    <button class="link-btn">More information</button>
                 </div>
             </article>
             <article class="info">
                 <img src="./images/saturn.png" alt="">
                 <div>
                     <h1 class="title">SATURN</h1>
-                    <p class="description">dfsjfsdjgfsdhfg</p>
+                    <p class="description">Saturn's interior is most likely composed of a core of 
+                        iron–nickel and rock (silicon and oxygen compounds). Its core is surrounded by a deep layer of metallic hydrogen, 
+                        an intermediate layer of liquid hydrogen and liquid helium, and finally, a gaseous outer layer.
+                    </p>
+                    <button class="link-btn">More information</button>
                 </div>
             </article>
         </div>
     </section>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script src="./solarSystem.js"></script>
 </body>
+
 </html>
