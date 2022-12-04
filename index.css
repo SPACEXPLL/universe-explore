@@ -8,6 +8,13 @@ body {
     background-size: cover;
 }
 
+.voyager{
+    width: 100px;
+    height: 60px;
+    margin-left: 10px;
+}
+
+
 .header {
     display: flex;
     justify-content: space-between;
