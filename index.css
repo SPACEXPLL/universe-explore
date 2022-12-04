@@ -1,6 +1,4 @@
-@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Ubuntu:wght@300&display=swap');
-
 
 body {
     margin: 0px;
@@ -131,75 +129,9 @@ input:hover{
     }
 }
 
-.solar-system {
-    top: 0;
-    position: absolute;
-    z-index: 10;
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    height: 150%;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(./images/4k-sun-venus-pluto-uranus.jpg);
-    transition: 0.5s;
-    background-size: cover;
-    background-position: center;
-    
-}
-
-.planets {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 100px;
-    margin-top: 110px;
-}
-
-.info {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-}
-
-.info div {
-    margin-top: 0;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.info img {
-    width: 200px;
-    height: 200px;
-    margin-bottom: 0px;
-    
-}
-
-.title {
-    color: rgb(172, 4, 4);
-    font-size: 28px;
-    margin-top: 0px;
-    font-family: 'Roboto', 'sans-serif';
-    letter-spacing: 2px;
-    text-shadow: 0px 2px 2px rgba(255,255,255, 0.5);
-    
-}
 
 
 
-.link-btn {
-    background: none;
-    color: rgb(58, 2, 225);
-    border: none;
-    text-decoration: underline;
-    font-size: 14px;
-    font-family: 'Roboto', 'sans-serif';
-    cursor: pointer;
-    margin-top: 8px;
-    
-}
-.link-btn:hover{
-    opacity: 0.9;
-}
 /*  Buttons Style Bellow/ DO NOT CHANGE */
 a{
     
@@ -232,12 +164,7 @@ a:hover{
 .button{
     margin-top: 200px;
 }
-/* a:nth-child(1){
-    filter: hue-rotate(110deg);
-}
-a:nth-child(2){
-    filter: hue-rotate(270deg);
-} */
+
 a span{
     position: absolute;
     display: block;
@@ -308,125 +235,4 @@ a span:nth-child(4){
     50%,100%{
         bottom: 100%;
     }
-}
-
-
-
-/* This styles the aside container */
-/* #aSide {
-    height: 300px;
-    width: 300px;
-    position: absolute;
-    top: calc(50% - 250px);
-    z-index: 200;
-    right: 7%;
-} */
-
-/* This styles the 3D object inserted in the aside container */
-#aSide model-viewer {
-    height: 150px;
-    width: 150px;
-    position: absolute;
-    z-index: 200;
-    top: 0;
-    left: 0;
-    border: none;
-}
-
-.earth{
-    width: 40px;
-    height: 40px;
-    margin-left: 10px;
-}
-
-/*CONTACTS MENU*/
-
-.contacts{
-    
-    background-color: white;
-    position: absolute;
-    right: 0px;
-    top: 180px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70)), url(./images/constacts-bd.jpg);
-    background-size: cover;
-    box-shadow: 2px 4px 4px black;
-    display: none;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius:12px;
-}
-.app-icon{
-    font-size: 36px;
-    margin-left: 10px;
-    margin-top: 10px;
-    color: #03e9f4;
-}
-
-.desc{
-    margin: 5px 10px 5px 10px;
-    font-size: 18px;
-    color: #03e9f4;
-    font-weight: bold;
-}
-.cross-icon{
-    position: absolute;
-    color: red;
-    top: 2px;
-    right: 0;
-    font-size: 24px;
-    border: 1px solid black;
-    background-color: black;
-    
-    cursor: pointer;
-    transition: 0.5s;
-}
-.cross-icon:hover{
-    opacity: 0.7;
-}
-
-.acc-info{
-    position: relative;
-    margin: 0;
-}
-
-.acc-info .animation-1{
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 70%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#03e9f4);
-    animation: animate11 2s linear infinite;
-    animation-delay: 0.75;
-}
-.acc-info .animation-2{
-    position: absolute;
-    top:100%;
-    bottom: 0;
-    width: 70%;
-    height: 2px;
-    background: linear-gradient(90deg,transparent,#03e9f4);
-    animation: animate11 2s linear infinite;
-    animation-delay: 0.75;
-}
-.last-desc{
-    margin-bottom: 0px;
-}
-@keyframes animate10{
-    0%{
-        left: -0%;
-    }
-    50%,100%{
-        left: 100%;
-    }
-}
-
-@keyframes animate11 {
-    0%{
-        right: 30%;
-
-    }
-    50%,100%{
-        right:-100%;
-    }
-    
 }
