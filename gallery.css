@@ -1,0 +1,70 @@
+.gallery{
+    display: none;
+    width: 800px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
+    object-fit: cover;
+   
+    
+    
+}
+
+.gallery-img{
+    display: flex;
+    transform: translateX();
+    
+   
+    
+    
+}
+.gallery-img img{
+    width: 800px;
+}
+
+.angless{
+    position: absolute;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.angless:hover{
+    opacity: 1;
+}
+.right{
+    right: 0;
+}
+.left {
+    left: 0;
+}
+.down-icon{
+    position: absolute;
+    background: none;
+    border: none;
+    top :4px;
+    left: 50%;
+    transform: translateY(-50%);
+}
+.xmark-icon{
+    top: 13px;
+    left: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 28px;
+    transition: 0.3s;
+    display: none;
+}
+.xmark-icon:hover{
+    opacity: 0.7;
+    font-size: 36px;
+    top: 18px;
+}
